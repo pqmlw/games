@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "noEmit": false,
+    "outDir": "dist-node",
+    "module": "esnext",
+    "moduleResolution": "bundler"
+  },
+  "include": ["vite.config.ts"]
+}
