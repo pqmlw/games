@@ -1,1 +1,40 @@
 @import "tailwindcss";
+
+@layer base {
+    body {
+        @apply font-serif;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Fade out animation for removed symbols */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.animate-fade-out {
+    animation: fadeOut 0.4s ease-in-out forwards;
+}
